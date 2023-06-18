@@ -11,4 +11,6 @@
   (lib (name "2023-02-25_15-09-33")(type "KiCad")(uri "${KIPRJMOD}/74HC08/2023-02-25_15-09-33.kicad_sym")(options "")(descr ""))
   (lib (name "LT1784CS5")(type "KiCad")(uri "${KIPRJMOD}/LT1784CS5/LT1784CS5.kicad_sym")(options "")(descr ""))
   (lib (name "74HC125")(type "KiCad")(uri "${KIPRJMOD}/74HC125/74HC125.kicad_sym")(options "")(descr ""))
+  (lib (name "9Way Terminal")(type "KiCad")(uri "${KIPRJMOD}/9 Way Terminal Block/9Way Terminal.kicad_sym")(options "")(descr ""))
+  (lib (name "2 Way Terminal Block")(type "KiCad")(uri "${KIPRJMOD}/2 Way Terminal Block/2 Way Terminal Block.kicad_sym")(options "")(descr ""))
 )

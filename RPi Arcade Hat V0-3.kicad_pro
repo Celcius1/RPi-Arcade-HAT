@@ -119,7 +119,9 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        0.25,
+        1.0
       ],
       "via_dimensions": [
         {
@@ -350,7 +352,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "RPi Arcade Hat V2.kicad_pro",
+    "filename": "RPi Arcade Hat V0-3.kicad_pro",
     "version": 1
   },
   "net_settings": {

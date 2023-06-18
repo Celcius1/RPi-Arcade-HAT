@@ -11,4 +11,6 @@
   (lib (name "74HC08")(type "KiCad")(uri "${KIPRJMOD}/74HC08/74HC08.pretty")(options "")(descr ""))
   (lib (name "LT1784CS5")(type "KiCad")(uri "${KIPRJMOD}/LT1784CS5/LT1784CS5.pretty")(options "")(descr ""))
   (lib (name "74HC125")(type "KiCad")(uri "${KIPRJMOD}/74HC125/74HC125.pretty")(options "")(descr ""))
+  (lib (name "9Way Terminal")(type "KiCad")(uri "${KIPRJMOD}/9 Way Terminal Block/9Way Terminal.pretty")(options "")(descr ""))
+  (lib (name "2 Way Terminal Block")(type "KiCad")(uri "${KIPRJMOD}/2 Way Terminal Block/2 Way Terminal Block.pretty")(options "")(descr ""))
 )
