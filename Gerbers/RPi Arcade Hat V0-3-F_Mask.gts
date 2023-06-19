@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.6)*
-G04 #@! TF.CreationDate,2023-06-19T03:07:34+09:30*
+G04 #@! TF.CreationDate,2023-06-19T14:34:31+09:30*
 G04 #@! TF.ProjectId,RPi Arcade Hat V0-3,52506920-4172-4636-9164-652048617420,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.6)) date 2023-06-19 03:07:34*
+G04 Created by KiCad (PCBNEW (6.0.6)) date 2023-06-19 14:34:31*
 %MOMM*%
 %LPD*%
 G01*
