@@ -129,6 +129,14 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.3,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.2
+        },
+        {
           "diameter": 0.5,
           "drill": 0.3
         }
@@ -433,10 +441,6 @@
     [
       "ad210fca-1647-45d3-94e3-209006df452e",
       ""
-    ],
-    [
-      "51b9ff9f-4bc7-4aa6-9d7c-f4c9ec9fca37",
-      "Coin Counter"
     ]
   ],
   "text_variables": {}
