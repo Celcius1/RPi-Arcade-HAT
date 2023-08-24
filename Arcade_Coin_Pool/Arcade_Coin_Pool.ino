@@ -72,7 +72,6 @@ void setup(void) {
   {
     twoPlayer = !twoPlayer;
   }
-
   u8g2.begin();
 }
 
@@ -174,5 +173,5 @@ ISR(TIMER1_COMPA_vect)
   {
     digitalWrite(PlayI1, LOW);
     playerState1 = !playerState1;
-  }  
+  }
 }

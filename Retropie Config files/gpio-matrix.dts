@@ -1,0 +1,88 @@
+ /dts-v1/;
+    /plugin/;
+    / {
+           compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+           fragment@0 {
+              target-path = "/";
+              __overlay__ {
+                 keypad: gpio-matrix {
+                    compatible = "gpio-matrix-keypad";
+                    debounce-delay-ms = <10>;
+                    col-scan-delay-us = <10>;
+                    /*
+                       try to use GPIO only lines
+                       to keep SPI and I2C usable
+                    */
+					      // work    new
+                    row-gpios = <&gpio 17 0   // 0
+                                 &gpio 27 0   // 1
+                                 &gpio 22 0   // 2
+                                 &gpio 10 0   // 3
+								 &gpio 9  0>; // 4
+
+                    col-gpios = <&gpio 16 0   // 0
+                                 &gpio 12 0   // 1
+                                 &gpio 1  0   // 2
+                                 &gpio 7  0   // 3
+								 &gpio 8  0   // 4
+								 &gpio 25 0   // 5
+								 &gpio 24 0   // 6
+								 &gpio 23 0   // 7
+								 &gpio 11 0>; // 8
+                    /*
+                      Keycodes from /usr/include/linux/input-event-codes.h
+                      converted to hex using printf '%02x\n'
+                    */
+
+                    linux,keymap = <
+                                 // Keymap Entry       col  row  input
+                                    0x00000010      // col0 row0 KEY_Q  -------Player 1
+									0x00010011      // col1 row0 KEY_W
+									0x00020012      // col2 row0 KEY_E
+									0x00030013      // col3 row0 KEY_R
+									0x0004001E      // col4 row0 KEY_A
+									0x0005001F      // col5 row0 KEY_S
+									0x00060020      // col6 row0 KEY_D
+									0x00070021      // col7 row0 KEY_F
+									0x00080033      // col8 row0 KEY_COMMA  ---Player 1
+                                    0x01000014      // col0 row1 KEY_T  -------Player 2
+									0x01010015      // col1 row1 KEY_Y
+									0x01020016      // col2 row1 KEY_U
+									0x01030017      // col3 row1 KEY_I
+									0x01040022      // col4 row1 KEY_G
+									0x01050023      // col5 row1 KEY_H
+									0x01060024      // col6 row1 KEY_J
+									0x01070025      // col7 row1 KEY_K
+									0x01080034      // col8 row1 KEY_DOT  -----Player 2
+									0x0200002C      // col0 row2 KEY_Z  -------Player 3
+									0x0201002D      // col1 row2 KEY_X
+									0x0202002E      // col2 row2 KEY_C
+									0x0203002F      // col3 row2 KEY_V
+									0x02040030      // col4 row2 KEY_B
+									0x02050031      // col5 row2 KEY_N
+									0x02060032      // col6 row2 KEY_M
+									0x02070026      // col7 row2 KEY_L  
+									0x0208001A      // col8 row2 KEY_LEFTBRACE-Player 3
+                                    0x03000002      // col0 row3 KEY_1  -------Player 4
+									0x03010003      // col1 row3 KEY_2
+									0x03020004      // col2 row3 KEY_3
+									0x03030005      // col3 row3 KEY_4
+									0x03040006      // col4 row3 KEY_5
+									0x03050007      // col5 row3 KEY_6
+									0x03060008      // col6 row3 KEY_7
+									0x03070009      // col7 row3 KEY_8
+									0x0308001B      // col8 row3 KEY_RIGHTBRACE-Player 4
+									0x040000B7      // col0 row4 KEY_F13  --------Spares
+									0x040100B8      // col1 row4 KEY_F14
+									0x040200B9      // col2 row4 KEY_F15
+                                    0x040300BA      // col3 row4 KEY_F16
+                                    0x040400BB      // col4 row4 KEY_F17
+									0x040500BC      // col5 row4 KEY_F18
+									0x040600BD      // col6 row4 KEY_F19
+									0x040700BE>;    // col7 row4 KEY_F20  --------Spares
+                 };
+              };
+           };
+      };
+
