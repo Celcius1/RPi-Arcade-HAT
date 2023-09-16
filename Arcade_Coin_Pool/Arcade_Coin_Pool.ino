@@ -43,7 +43,7 @@ volatile bool playerState4 = false;
 
 volatile char tempStore1[10];
 
-U8G2_ST7920_128X64_1_HW_SPI u8g2(U8G2_R0, /* CS=*/ 10, /* reset=*/ 8);
+U8G2_ST7920_128X64_1_HW_SPI u8g2(U8G2_R0, /* CS=*/ 10, /* reset=*/ 22);
 
 
 void setup(void) {
